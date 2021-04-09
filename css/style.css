@@ -7,6 +7,7 @@ html {
 }
 
 :root {
+  font-size: 18px;
   --cyan: hsl(185, 75%, 39%);
   --blue: hsl(229, 23%, 23%);
   --grayishblue: hsl(227, 10%, 46%);
@@ -17,7 +18,6 @@ body {
   font-family: 'Kumbh Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background: var(--cyan);
   background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
   background-repeat: no-repeat;
   background-position: top left, bottom right;
@@ -26,12 +26,26 @@ body {
 /* Background-image */
 
 section {
+  background: var(--cyan);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  width: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
 }
 
 .card-banner {
   background-image: url("../images/bg-pattern-card.svg");
   background-size: cover;
-  height: 100px;
+  height: 150px;
 }
 
 .card-info {
