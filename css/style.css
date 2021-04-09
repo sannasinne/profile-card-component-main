@@ -7,20 +7,18 @@ html {
 }
 
 :root {
-  font-size: 18px;
   --cyan: hsl(185, 75%, 39%);
   --blue: hsl(229, 23%, 23%);
   --grayishblue: hsl(227, 10%, 46%);
   --gray: hsl(0, 0%, 59%);
+  font-size: 18px;
+  color: var(--blue);
 }
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-  background-repeat: no-repeat;
-  background-position: top left, bottom right;
 }
 
 /* Background-image */
@@ -32,6 +30,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   position: relative;
 }
 
@@ -40,6 +39,8 @@ section {
   border-radius: 1rem;
   overflow: hidden;
   text-align: center;
+  background: white;
+  z-index: 7;
 }
 
 .card-banner {
@@ -49,12 +50,12 @@ section {
 }
 
 .image {
-  width: 100px;
-  height: 100px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   border: 5px solid white;
   overflow: hidden;
-  margin: -52.5px auto 30px auto;
+  margin: -55px auto 30px auto;
 }
 
 .image img {
@@ -63,6 +64,80 @@ section {
   display: block;
 }
 
-.card-info {
+h2 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
 
+span {
+  margin-left: 6px;
+}
+
+span,
+h3 {
+  font-weight: 400;
+  color: var(--gray);
+}
+
+h3 {
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.card-numbers {
+  border-top: 1px solid hsl(0, 0%, 87%);
+  display: flex;
+  padding: 0 25px;
+}
+
+.card-numbers .item {
+  flex: 1;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4,
+h5 {
+  margin: 0;
+}
+
+h5 {
+  font-size: 0.66rem;
+  font-weight: 400;
+  color: var(--gray);
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+
+/* Background images */
+
+.background-img .circle-top,
+.background-img .circle-bottom {
+  position: absolute;
+}
+
+.background-img .circle-top {
+  top: -600px;
+  left: -600px;
+}
+
+.background-img .circle-bottom {
+  bottom: -600px;
+  right: -600px;
+}
+
+@media screen and (min-width: 990px) {
+  .background-img .circle-top {
+    top: -420px;
+    left: -350px;
+  }
+  
+  .background-img .circle-bottom {
+    bottom: -420px;
+    right: -350px;
+  }
 }
