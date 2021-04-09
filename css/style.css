@@ -48,6 +48,21 @@ section {
   height: 150px;
 }
 
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  margin: -52.5px auto 30px auto;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .card-info {
 
 }
