@@ -1,0 +1,39 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan: hsl(185, 75%, 39%);
+  --blue: hsl(229, 23%, 23%);
+  --grayishblue: hsl(227, 10%, 46%);
+  --gray: hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--cyan);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+/* Background-image */
+
+section {
+}
+
+.card-banner {
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: cover;
+  height: 100px;
+}
+
+.card-info {
+
+}

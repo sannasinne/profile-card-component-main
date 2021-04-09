@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/style.css">  
   <title>Frontend Mentor | Profile card component</title>
 
@@ -15,21 +17,32 @@
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <section class="main">
+    <div class="card">
+      <div class="card-banner"></div>
+      <div class="card-info">
+        <div class="image">
+          <img src="images/image-victor.jpg" alt="Image og Victor">
+        </div>
+        <h2>Victor Crest<span>26</span></h2>
+        <h3>London</h3>
+      </div>
+      <div class="card-numbers">
+        <p class="value">80K</p>
+        <p>Followers</p>
+    
+        <p class="value">803K</p>
+        <p>Likes</p>
+    
+        <p class="value">1.4K</p>
+        <p>Photos</p>
+      </div> 
+    </div>
+     
+  </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/sannasinne">Sanna</a>.
   </div>
 </body>
 </html>
